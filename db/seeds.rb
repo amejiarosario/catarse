@@ -52,25 +52,25 @@ puts 'Seeding the database...'
 end
 
 {
-  company_name: 'Catarse',
-  host: 'catarse.me',
-  base_url: "http://catarse.me",
-  blog_url: "http://blog.catarse.me",
-  email_contact: 'contato@catarse.me',
-  email_payments: 'financeiro@catarse.me',
-  email_projects: 'projetos@catarse.me',
-  email_system: 'system@catarse.me',
-  email_no_reply: 'no-reply@catarse.me',
-  facebook_url: "http://facebook.com/catarse.me",
-  facebook_app_id: '173747042661491',
-  twitter_username: "catarse",
-  mailchimp_url: "http://catarse.us5.list-manage.com/subscribe/post?u=ebfcd0d16dbb0001a0bea3639&amp;id=149c39709e",
-  catarse_fee: '0.13',
-  support_forum: 'http://suporte.catarse.me/',
-  base_domain: 'catarse.me',
-  uservoice_secret_gadget: 'change_this',
-  uservoice_key: 'uservoice_key',
-  project_finish_time: '02:59:59'
+  company_name:             'Jondéame',
+  host:                     'jondeame.me',
+  base_url:                 'http://jondeame.me',
+  blog_url:                 'http://blog.jondea.me',
+  email_contact:            'contacto@jondea.me',
+  email_payments:           'finanzas@jondea.me',
+  email_projects:           'projetos@jondea.me',
+  email_system:             'system@jondea.me',
+  email_no_reply:           'no-reply@jondea.me',
+  facebook_url:             'http://facebook.com/jondeame',
+  facebook_app_id:          '173747042661491',
+  twitter_username:         'jondeame',
+  mailchimp_url:            'http://catarse.us5.list-manage.com/subscribe/post?u=ebfcd0d16dbb0001a0bea3639&amp;id=149c39709e',
+  catarse_fee:              '0.13',
+  support_forum:            'http://suporte.jondea.me/',
+  base_domain:              'jondea.me',
+  uservoice_secret_gadget:  'change_this',
+  uservoice_key:            'uservoice_key',
+  project_finish_time:      '02:59:59'
 }.each do |name, value|
    conf = Configuration.find_or_initialize_by_name name
    conf.update_attributes({
